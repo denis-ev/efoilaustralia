@@ -8,7 +8,7 @@ Thank you guys!
 */
 
 (function ($) {
-  $("#google-reviews").googlePlaces = function (options) {
+  $.fn.googlePlaces = function (options) {
     // This is the easiest way to have default options.
     var settings = $.extend(
       {
