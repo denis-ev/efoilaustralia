@@ -16,17 +16,29 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
 
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/google-places.js "></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=&#91;AIzaSyDNdhc6SDHqMXSisH4JNraucrMtVwPkcR4&#93;"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDNdhc6SDHqMXSisH4JNraucrMtVwPkcR4"></script>
         <script>
-            jQuery(document).ready(function() {
-                $("#google-reviews").googlePlaces({
-                    placeId: '[ChIJK-ShqVSlMioRKuD-ct6USFc]',
-                    render: ['reviews'],
-                    min_rating: 5,
-                    max_rows: 0
-                });
+            jQuery(document).ready(function($) {
+              if ($("#google-reviews").length == 0) {
+                return
+              }
+              // Find a placeID via https://developers.google.com/places/place-id
+              $("#google-reviews").googlePlaces({
+                placeId: 'ChIJK-ShqVSlMioRKuD-ct6USFc',
+                // the following params are optional (default values)
+                header: "<h3>Google Reviews</h3>", // html/text over Reviews
+                footer: '', // html/text under Reviews block
+                maxRows: 5, // max 5 rows of reviews to be displayed
+                minRating: 4, // minimum rating of reviews to be displayed
+                months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+                textBreakLength: "90", // length before a review box is set to max width
+                shortenNames: true, // example: "Max Mustermann" -> "Max M."",
+                moreReviewsButtonUrl: '', // url to Google Place reviews popup
+                moreReviewsButtonLabel: 'Show More Reviews',
+                writeReviewButtonUrl: '', // url to Google Place write review popup
+                writeReviewButtonLabel: 'Write New Review',
+                showProfilePicture: true
+              });
             });
         </script>
 
@@ -234,7 +246,9 @@
                                             <blockquote> “A brilliant say new way to travel over water. Business Insider – Probably the most incredible thing I have ever tried!” </blockquote>
                                             <h5>Jon Olsson</h5> <span>Feestyle Skiing World Champion</span> </div>
                                     </li>
-                                    <div class="testimonial" id="google-reviews"> </div>
+                                    <li>
+                                        <div class="testimonial" id="google-reviews"> </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
