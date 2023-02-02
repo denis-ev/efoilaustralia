@@ -17,6 +17,19 @@
 
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
+        <!-- JQUERY IS REQUIRED -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- DO NOT FORGET TO SET YOUR OWN API KEY!  -->
+        <!-- Create an API key: -->
+        <!-- https://console.developers.google.com/apis/library/places-backend.googleapis.com/?q=places -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDNdhc6SDHqMXSisH4JNraucrMtVwPkcR4"></script>
+
+        <!-- load the plugin/script -->
+        <script src="js/jquery-google-reviews.js" defer></script>
+
+        <!-- load the css to display the reviews beautifully -->
+        <link href="css/jquery-google-reviews.css" rel="stylesheet">
+
     </head>
     <body data-smooth-scroll-offset="77">
         <div class="nav-container">
@@ -203,27 +216,7 @@
                 <div class="background-image-holder"> <img alt="background" src="img/hero-1.jpg"> </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-md-10">
-                            <div class="slider" data-paging="true" data-arrows="true" data-timing="5000">
-                                <ul class="slides">
-                                    <li>
-                                        <div class="testimonial">
-                                            <blockquote>The most magical gadget on the planet<br></blockquote>
-                                            <h5>Tobias Tütke<br></h5> <span>Founder, Shopify</span> </div>
-                                    </li>
-                                    <li>
-                                        <div class="testimonial">
-                                            <blockquote> “Stunning design all around. Every single aspect of this product has been meticulously though out. The 90 minute run-time battery is really a unique feature. The handheld controller is simple, intuitive and highly functional. The simple vibration feedback is very cleaver and has clearly been designed with the user at the center of the process. This is without doubt a world class sporting product and a brilliant example of a good idea turned into an excellent product though professional design.” </blockquote>
-                                            <h5>Dr. Brandon Gien</h5> <span> </span> </div>
-                                    </li>
-                                    <li>
-                                        <div class="testimonial">
-                                            <blockquote> “A brilliant say new way to travel over water. Business Insider – Probably the most incredible thing I have ever tried!” </blockquote>
-                                            <h5>Jon Olsson</h5> <span>Feestyle Skiing World Champion</span> </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div id="google-reviews"></div>
                     </div>
                 </div>
             </section>
