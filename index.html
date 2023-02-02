@@ -16,6 +16,19 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
 
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/google-places.js "></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=&#91;AIzaSyDNdhc6SDHqMXSisH4JNraucrMtVwPkcR4&#93;"></script>
+        <script>
+            jQuery(document).ready(function() {
+                $("#google-reviews").googlePlaces({
+                    placeId: '[ChIJK-ShqVSlMioRKuD-ct6USFc]',
+                    render: ['reviews'],
+                    min_rating: 5,
+                    max_rows: 0
+                });
+            });
+        </script>
 
     </head>
     <body data-smooth-scroll-offset="77">
@@ -221,6 +234,7 @@
                                             <blockquote> “A brilliant say new way to travel over water. Business Insider – Probably the most incredible thing I have ever tried!” </blockquote>
                                             <h5>Jon Olsson</h5> <span>Feestyle Skiing World Champion</span> </div>
                                     </li>
+                                    <div class="testimonial" id="google-reviews"> </div>
                                 </ul>
                             </div>
                         </div>
