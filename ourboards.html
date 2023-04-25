@@ -28,9 +28,6 @@
         gtag('js', new Date());
         gtag('config', 'G-PX0P321PJD');
     </script>
-
-    <!-- Added infinite-scroll script -->
-    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
 </head>
 <!-- Menu start -->
 
@@ -143,83 +140,6 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8238_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8238_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8243_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8243_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8246_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8246_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8259_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8259_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8272_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8272_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8280_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8280_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8289_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8289_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8296_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8296_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8305_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8305_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8312_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8312_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
-                            <div class="masonry-item-content">
-                                <a href="img/_A7R8342_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8342_edit.webp" />
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     <!--end masonry container-->
                 </div>
@@ -294,23 +214,7 @@
     <script src="js/spectragram.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
     <script>
-        // Initialize Infinite Scroll
-        let masonryGrid = document.querySelector('.masonry');
-        let infScroll = new InfiniteScroll(masonryGrid, {
-            path: '.pagination__next',
-            append: '.masonry__item',
-            status: '.page-load-status',
-            hideNav: '.pagination',
-            history: false,
-            scrollThreshold: 300,
-            outlayer: new Masonry(masonryGrid, {
-                itemSelector: '.masonry__item',
-                columnWidth: '.masonry__item',
-                transitionDuration: '0.4s'
-            })
-        });
         // Lazy Load images
         infScroll.on('append', function(response, path, items) {
             let imgs = items.map(item => item.querySelector('img[data-src]'));
