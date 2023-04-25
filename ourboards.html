@@ -1,242 +1,325 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>eFoil Australia / Our Boards</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
-        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme-efoilaustralia.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
 
-        <script defer data-domain="efoilaustralia.com" src="https://analytics.evers.sh/js/plausible.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>eFoil Australia / Our Boards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme-efoilaustralia.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+    <script defer data-domain="efoilaustralia.com" src="https://analytics.evers.sh/js/plausible.js"></script>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX0P321PJD"></script>
-        <script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX0P321PJD"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
-
         gtag('config', 'G-PX0P321PJD');
-        </script>
+    </script>
 
-    </head>
-    <!-- Menu start -->
-    <body data-smooth-scroll-offset="77">
-        <div class="nav-container">
-            <div class="via-1674633350070" via="via-1674633350070" vio="Book Now">
-                <div class="bar bar--sm visible-xs">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-3 col-md-2">
+    <!-- Added infinite-scroll script -->
+    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+</head>
+<!-- Menu start -->
+
+<body data-smooth-scroll-offset="77">
+    <div class="nav-container">
+        <div class="via-1674633350070" via="via-1674633350070" vio="Book Now">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="index.html"> <img class="logo" alt="logo" src="img/logo.webp"> </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i
+                                    class="icon icon--sm stack-interface stack-menu"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="menu1" class="bar bar-1 hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
                                 <a href="index.html"> <img class="logo" alt="logo" src="img/logo.webp"> </a>
                             </div>
-                            <div class="col-9 col-md-10 text-right">
-                                <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i class="icon icon--sm stack-interface stack-menu"></i> </a>
+                        </div>
+                        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal text-left">
+                                    <li> <a href="theexperience.html" target="_self">&nbsp;The Experience</a> </li>
+                                    <li> <a href="ourboards.html" target="_self">&nbsp;Our Boards
+                                        </a> </li>
+                                    <li> <a href="vouchers.html" target="_self">&nbsp;Gift Vouchers
+                                        </a> </li>
+                                </ul>
+                            </div>
+                            <div class="bar__module">
+                                <a class="btn btn--sm btn--primary type--uppercase" href="tours.html">
+                                    <span class="btn__text">
+                                        &nbsp;Book Now
+                                    </span> 
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <nav id="menu1" class="bar bar-1 hidden-xs">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-1 col-md-2 hidden-xs">
-                                <div class="bar__module">
-                                    <a href="index.html"> <img class="logo" alt="logo" src="img/logo.webp"> </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
-                                <div class="bar__module">
-                                    <ul class="menu-horizontal text-left">
-                                        <li> <a href="theexperience.html" target="_self">&nbsp;The Experience</a> </li>
-                                        <li> <a href="ourboards.html" target="_self">&nbsp;Our Boards
-                                    </a> </li>
-                                        <li> <a href="vouchers.html" target="_self">&nbsp;Gift Vouchers
-                                    </a> </li>
-                                    </ul>
-                                </div>
-                                <div class="bar__module">
-                                    <a class="btn btn--sm btn--primary type--uppercase" href="tours.html"> <span class="btn__text">&nbsp;Book Now
-                                </span> </a>
-                                </div>
-                            </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Menu end -->
+    <div class="main-container">
+        <section class=" ">
+            <div class="container">
+                <div class="masonry">
+                    <div class="masonry-filter-container text-center row justify-content-center align-items-center">
+                        <span>Boards:</span>
+                        <div class="masonry-filter-holder">
+                            <div class="masonry__filters" data-filter-all-text="All Boards"></div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Menu end -->
-        <div class="main-container">
-            <section class=" ">
-                <div class="container">
-                    <div class="masonry">
-                        <div class="masonry-filter-container text-center row justify-content-center align-items-center">
-                            <span>Boards:</span>
-                            <div class="masonry-filter-holder">
-                                <div class="masonry__filters" data-filter-all-text="All Boards"></div>
+                    <!--end masonry filters-->
+                    <div class="masonry__container row">
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Hulk">
+                            <div class="masonry-item-content">
+                                <a href="img/_A7R8184.webp" data-lightbox="Gallery">
+                                    <img alt="Board Name" src="img/_A7R8184.webp" />
+                                </a>
                             </div>
                         </div>
-                        <!--end masonry filters-->
-                        <div class="masonry__container row">
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Hulk">
-                                <a href="img/_A7R8184.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8184.webp" />
-                                </a>
-                            </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Hulk">
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Hulk">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8206.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8206.webp" />
+                                    <img alt="Board Name" src="img/_A7R8206.webp" />
                                 </a>
                             </div>
-                            <!-- <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Hulk">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Hulk">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8212.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8212.webp" />
                                 </a>
-                            </div> -->
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Hulk,Silver Surfer">
+                            </div>
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Hulk,Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8118.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8118.webp" />
                                 </a>
                             </div>
-                            <!-- <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Hulk,Silver Surfer">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Hulk,Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8121.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8121.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Hulk,Silver Surfer">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Hulk,Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8147.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8147.webp" />
                                 </a>
-                            </div> -->
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Silver Surfer">
+                            </div>
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8234_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8234_edit.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Silver Surfer">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8238_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8238_edit.webp" />
                                 </a>
                             </div>
-                            <!-- <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Silver Surfer">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8243_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8243_edit.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Silver Surfer">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8246_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8246_edit.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Silver Surfer">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8259_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8259_edit.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Silver Surfer">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Silver Surfer">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8272_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8272_edit.webp" />
                                 </a>
-                            </div> -->
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Black Panther">
+                            </div>
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8280_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8280_edit.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Black Panther">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8289_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8289_edit.webp" />
                                 </a>
                             </div>
-                            <!-- <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Black Panther">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8296_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8296_edit.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Black Panther">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8305_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8305_edit.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Black Panther">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8312_edit.webp" data-lightbox="Gallery">
                                     <img alt="Image" src="img/_A7R8312_edit.webp" />
                                 </a>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Black Panther">
+                        </div>
+                        <div class="masonry__item col-lg-4 col-md-6 col-sm-12" data-masonry-filter="Black Panther">
+                            <div class="masonry-item-content">
                                 <a href="img/_A7R8342_edit.webp" data-lightbox="Gallery">
-                                    <img alt="Image" src="img/_A7R8342_edit.webp" /> 
+                                    <img alt="Image" src="img/_A7R8342_edit.webp" />
                                 </a>
-                            </div> -->
-                        </div>
-                        <!--end masonry container-->
-                    </div>
-                    <!--end masonry-->
-                </div>
-                <!--end of container-->
-            </section>
-            <!-- Contact start -->
-            <a id="contact" class="in-page-link"></a>
-            <section class="switchable switchable--switch bg--secondary">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-md-5">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.8621027412073!2d115.84523741494401!3d-31.964637530181594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a554a9a1e42b%3A0x574894de72fee02a!2sEfoilaustralia!5e0!3m2!1sen!2sau!4v1675232338002!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="text-block">
-                                <a href="index.html"> <img class="logo" alt="logo" height="200px" src="img/logo.webp"> </a>
-                                <p class="lead"> Questions or comments? We'd love to hear from you. Get in touch today! </p>
-                                <p class="lead"> 
-                                    Email: <a href="mailto:info@efoilaustralia.com">info@efoilaustralia.com</a><br>
-                                    Phone: <a href="tel:+61418896609">0 418 896 609</a><br>
-                                    Address: Efoilaustralia, Miller Pool Carpark, Mill Point Cl, South Perth WA 6151, Australia</p>
-                                <p class="lead"> We are here from 8am — 6pm every day. </p>
-                                <p class="lead"><img height="20px" alt="flite_authorized-partners_blk" src="img/flite_authorised-partners_blk.webp"></p>
                             </div>
                         </div>
                     </div>
+                    <!--end masonry container-->
                 </div>
-            </section>
-            <!-- Contact end -->
-            <!-- Footer start -->
-            <footer class="footer-7 text-center-xs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6"> 
-                            <ul class="social-list list-inline"> 
-                                <span class="type--fine-print">© <span class="update-year">2023</span> efoilaustralia — All Rights Reserved</span>
-                                <span class="type--fine-print"> | </span>
-                                <span class="type--fine-print">Made by <a href="https://evers.sh">Denis</a> </span>
-                                <span class="type--fine-print"> | </span>
-                                <span class="type--fine-print"><a href="terms.html">Terms and conditions</a></span>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 text-right text-center-xs">
-                            <ul class="social-list list-inline">
-                                <li><img class="icon icon--xs" height="16px" alt="flite_authorized-partners_blk" src="img/flite_authorised-partners_blk.webp"></li>
-                                <li><a href="https://www.instagram.com/efoil_australia/" target="_blank"><i class="socicon socicon-instagram icon icon--xs"></i></a></li>
-                            </ul>
+                <!--end masonry-->
+            </div>
+            <!--end of container-->
+        </section>
+        <!-- Contact start -->
+        <a id="contact" class="in-page-link"></a>
+        <section class="switchable switchable--switch bg--secondary">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-5">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.8621027412073!2d115.84523741494401!3d-31.964637530181594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a554a9a1e42b%3A0x574894de72fee02a!2sEfoilaustralia!5e0!3m2!1sen!2sau!4v1675232338002!5m2!1sen!2sau"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="text-block">
+                            <a href="index.html"> <img class="logo" alt="logo" height="200px" src="img/logo.webp"> </a>
+                            <p class="lead"> Questions or comments? We'd love to hear from you. Get in touch today! </p>
+                            <p class="lead">
+                                Email: <a href="mailto:info@efoilaustralia.com">info@efoilaustralia.com</a><br>
+                                Phone: <a href="tel:+61418896609">0 418 896 609</a><br>
+                                Address: Efoilaustralia, Miller Pool Carpark, Mill Point Cl, South Perth WA 6151, Australia</p>
+                            <p class="lead"> We are here from 8am — 6pm every day. </p>
+                            <p class="lead"><img height="20px" alt="flite_authorized-partners_blk"
+                                    src="img/flite_authorised-partners_blk.webp"></p>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- Footer end -->
-        </div>
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/isotope.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/scripts.js"></script>
-
-    </body>
+            </div>
+        </section>
+        <!-- Contact end -->
+        <!-- Footer start -->
+        <footer class="footer-7 text-center-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="social-list list-inline">
+                            <span class="type--fine-print">© <span class="update-year">2023</span> efoilaustralia — All
+                                Rights Reserved</span>
+                            <span class="type--fine-print"> | </span>
+                            <span class="type--fine-print">Made by <a href="https://evers.sh">Denis</a> </span>
+                            <span class="type--fine-print"> | </span>
+                            <span class="type--fine-print"><a href="terms.html">Terms and conditions</a></span>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 text-right text-center-xs">
+                        <ul class="social-list list-inline">
+                            <li><img class="icon icon--xs" height="16px" alt="flite_authorized-partners_blk"
+                                    src="img/flite_authorised-partners_blk.webp"></li>
+                            <li><a href="https://www.instagram.com/efoil_australia/" target="_blank"><i
+                                        class="socicon socicon-instagram icon icon--xs"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/flickity.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/granim.min.js"></script>
+    <script src="js/jquery.steps.min.js"></script>
+    <script src="js/spectragram.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+    <script>
+        // Initialize Infinite Scroll
+        let masonryGrid = document.querySelector('.masonry');
+        let infScroll = new InfiniteScroll(masonryGrid, {
+            path: '.pagination__next',
+            append: '.masonry__item',
+            status: '.page-load-status',
+            hideNav: '.pagination',
+            history: false,
+            scrollThreshold: 300,
+            outlayer: new Masonry(masonryGrid, {
+                itemSelector: '.masonry__item',
+                columnWidth: '.masonry__item',
+                transitionDuration: '0.4s'
+            })
+        });
+        // Lazy Load images
+        infScroll.on('append', function(response, path, items) {
+            let imgs = items.map(item => item.querySelector('img[data-src]'));
+            imgs.forEach(img => {
+                img.setAttribute('src', img.getAttribute('data-src'));
+                img.removeAttribute('data-src');
+            });
+        });
+    </script>
+</body>
 
 </html>
