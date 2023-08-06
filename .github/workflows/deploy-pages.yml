@@ -31,9 +31,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Set PR Directory
-        run: |
-          deploy_dir="pr/${{ github.event.pull_request.number }}/${{ github.sha }}"
-          echo "::set-env name=DEPLOY_DIR::$deploy_dir"
+        run: echo "DEPLOY_DIR=pr/${{ github.event.pull_request.number }}/${{ github.sha }}" >> $GITHUB_ENV
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
@@ -43,6 +41,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
+        env:
+          DEPLOY_DIR: pr/${{ github.event.pull_request.number }}/${{ github.sha }}
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
