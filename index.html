@@ -90,7 +90,7 @@
     <div class="main-container">
         <!-- Cover image start -->
         <a id="head" class="in-page-link"></a>
-        <section class="fullscreen-80 imagebg text-center">
+        <section class="fullscreen-with-nav imagebg text-center">
             <div class="background-image-holder">
                 <img alt="background" src="img/_A7R8234_edit.webp" />
             </div>
@@ -418,8 +418,14 @@
             right: 20px;
             z-index: 9999;
         }
-        .fullscreen-80 {
-            height: 80vh;
+        .fullscreen-with-nav {
+            height: calc(100vh - 77px); /* Adjust the height based on your nav-container height if needed */
+        }
+
+        @media (max-width: 767px) {
+            .fullscreen-with-nav {
+                height: calc(100vh - 57px); /* Adjust the height based on your nav-container height on mobile devices if needed */
+            }
         }
     </style>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/851e2edfd36c6ee6363757bd8/9e6beb3db48cf73ae0002b667.js");</script>
