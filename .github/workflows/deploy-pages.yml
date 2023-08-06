@@ -1,32 +1,49 @@
-name: Deploy GitHub Pages
+name: Deploy static content to Pages
 
 on:
   pull_request:
     types:
       - opened
       - synchronize
-  
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
+  # Single deploy job since we're just deploying
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      deployments: write
-      pull-requests: write
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Create PR-specific branch
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Set PR Directory
         run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git checkout -b pr/${{ github.event.pull_request.number }}/${{ github.sha }}
+          deploy_dir="pr/${{ github.event.pull_request.number }}/${{ github.sha }}"
+          echo "::set-env name=DEPLOY_DIR::$deploy_dir"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          # Upload entire repository
+          path: '.'
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        id: deployment
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./pr/${{ github.event.pull_request.number }}/${{ github.sha }}
+          branch: gh-pages
+          folder: ${{ env.DEPLOY_DIR }}
