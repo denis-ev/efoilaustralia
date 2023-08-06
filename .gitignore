@@ -1,2 +1,10 @@
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+[Tt]humbs.db
+[._]*
+
+!.github
+
 orig_img
